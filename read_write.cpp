@@ -6,7 +6,12 @@ int main(){
 
     int tmp;
     ifstream myfile;
-    myfile.open('file.txt')
+    myfile.open("file.txt");
+    int a, b, c;
+    myfile>>a>>b>>c;
+    cout<<a<<" "<<b<<" "<<c<<endl;
+
+    myfile.close();
 
     return 0;
 }

@@ -2,6 +2,7 @@
 #include<math.h>
 using namespace std;
 
+//Such a polynomial example
 int main(){
 
     int n;
@@ -18,6 +19,7 @@ int main(){
     double sum=0.0;
     for (int i=0;i<n+1;i++){
         sum=sum+coeffficient[i]*pow(x,i);
+        cout<<pow(x, i)<<endl;
     }
     cout<<"Put it into x:"<<sum<<endl;
 

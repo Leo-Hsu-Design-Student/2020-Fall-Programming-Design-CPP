@@ -7,7 +7,6 @@ int main(){
     while(cin>>str){
     cout<<"hello, "<<str<<endl;
     }
-    
 
     return 0;
 }

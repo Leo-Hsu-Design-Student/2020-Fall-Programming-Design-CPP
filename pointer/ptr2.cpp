@@ -13,13 +13,7 @@ int main(){
     cout<<a_ptr<<endl;
     cout<<*a_ptr<<endl;
     double* b_ptr;//資料型態：double*
-    char *c_ptr;//資料型態：char*（*不管寫在哪都不是變數名稱）
+    char* c_ptr;//資料型態：char*（*不管寫在哪都不是變數名稱）
     //為何會有不同料型態與*合起來？由於不同資料型態的儲存大小不同，要讓指標變數知道存多少空間的記憶體位置。
-
-
-
-
-
-
     return 0;
 }

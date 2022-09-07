@@ -34,7 +34,7 @@ void swap_(int* ptr1,int* ptr2){
 }
 
 //如何只交換區段去交換變數
-void swap__(void* ptr1,void*ptr2,int len){//先用void* 去儲存所有資料型態
+void swap__(void* ptr1,void* ptr2,int len){//先用void* 去儲存所有資料型態
     char* p1=(char*)ptr1;
     char* p2=(char*)ptr2;
 

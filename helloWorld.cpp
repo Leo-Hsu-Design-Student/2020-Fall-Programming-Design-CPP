@@ -1,6 +1,6 @@
 #include<iostream>  
 // #means 前置處理before compile
-// 表示先把<iostream>的內容copy paste 過來，i menas input, o means output, and stream means 串流。
+// 表示先把<iostream>的內容copy paste 過來，i means input, o means output, and stream means 串流。
 // <>裡頭表示檔案類型＝標題檔header
 // () means 函數，所以main()是一個函數，{} means 裡面可能有很多函式 
 using namespace std;

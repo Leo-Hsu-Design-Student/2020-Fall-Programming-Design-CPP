@@ -49,14 +49,14 @@ void Scene::Add(Object obj){
     objects.push_back(obj);
 }
 void Scene::Remove(int ID){
-    /*int index=0;
-    for (int i=0;i<objects.size();i++){
-        if (objects[i].ID==ID){
-            index=i;
-            break;
-        }
-    }
-    objects.erase(objects.begin()+index);*/
+    int index=0;
+    // for (int i=0;i<objects.size();i++){
+    //     if (objects[i].ID==ID){
+    //         index=i;
+    //         break;
+    //     }
+    // }
+    // objects.erase(objects.begin()+index);
     
     objects_map.erase(ID);
 }
@@ -69,12 +69,14 @@ void Scene::DisplayByID(int ID){
     }*/
     cout<<"ID"<<ID<<":"<<objects_map[ID].name<<endl;
 }
-void Scene::Display(){
-    for (map<int,Object>::iterator iter=objects_map.begin();iter!=objects_map.end();iter++){
-        cout<<"ID"<<iter->first<<":"<<(iter->second).name<<endl;
-        DisplaySingleObject(iter->second);
-    }
-}
-void DisplaySingleObject(Object obj){
+
+void Scene::DisplaySingleObject(Object obj){
     cout<<"ID"<<obj.ID<<":"<<obj.name<<endl;
+}
+
+void Scene::Display(){
+    for (map<int,Object>::iterator iter=objects_map.begin(); iter!=objects_map.end(); iter++){
+        cout<< "ID" << (iter->first) <<":"<< (iter->second).name <<endl;
+        this->DisplaySingleObject(iter->second);
+    }
 }
